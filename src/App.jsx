@@ -3,18 +3,6 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// importiamo gli elementi della libreria di gestione delle rotte
+import { BrowserRouter, Routers, Route } from 'react-router-dom'
 
-import Header from './assets/components/Header'
-import PostList from './assets/components/PostList'
-
-
-function App() {
-  return (
-    <>
-      <Header />
-      <PostList />
-    </>
-  )
-}
-
-export default App
