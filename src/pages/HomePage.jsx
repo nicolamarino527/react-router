@@ -1,7 +1,9 @@
-export default function Homepage() {
+import NavBar from "../components/NavBar";
+
+export default function HomePage() {
     return (
-        <div>
-            homepage
-        </div>
-    )
+        <>
+            <div>Benvenuto nella homepage!</div>
+        </>
+    );
 }

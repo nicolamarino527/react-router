@@ -13,6 +13,12 @@
 
 }
 
+.links {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
 .posts-title {
   text-align: center;
   font-size: 40px;
