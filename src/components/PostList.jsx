@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function App() {
+export default function PostList() {
     // stato per i post
     const [posts, setPosts] = useState([]);
 

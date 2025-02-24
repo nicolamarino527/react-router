@@ -6,11 +6,14 @@
 }
 
 .header {
-  height: 80px;
+  height: 150px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
 
+.title {
+  font-size: 70px;
 }
 
 .links {
@@ -27,6 +30,7 @@
 
 .bg {
   background-color: rgb(236, 236, 236);
+  height: 100%;
 }
 
 .card {
@@ -56,4 +60,11 @@
   padding-right: 10%;
   padding-top: 30px;
   padding-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
 }
