@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export default function PostList() {
@@ -71,18 +72,20 @@ export default function PostList() {
             <h2 className='posts-title'>Lista dei Post</h2>
             <div className="post-list mt-5">
                 {posts.map((post) => (
-                    <div className="card" key={post.id}>
-                        <img
-                            src={post.image}
-                            className="card-img-top"
-                            alt="Card image"
-                        />
-                        <div className="card-body">
-                            <h5 className="card-title">{post.title}</h5>
-                            <p className="card-text">{post.tags}</p>
-                            <p className="card-text">{post.content}</p>
+                    <Link to={`/posts/${post.id}`} className='card-link'>
+                        <div className="card" key={post.id}>
+                            <img
+                                src={post.image}
+                                className="card-img-top"
+                                alt="Card image"
+                            />
+                            <div className="card-body">
+                                <h5 className="card-title">{post.title}</h5>
+                                <p className="card-text">{post.tags}</p>
+                                <p className="card-text">{post.content}</p>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <div className="form">
@@ -144,6 +147,6 @@ export default function PostList() {
             </div>
 
 
-        </div>
+        </div >
     );
 }
