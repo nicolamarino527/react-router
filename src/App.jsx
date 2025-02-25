@@ -8,6 +8,7 @@ import ContactsPage from './pages/ContactsPage';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import PostList from './components/PostList';
+import PostDetailPage from './pages/PostDetailPage';
 
 function App() {
   return (
@@ -17,7 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="/posts" element={<PostsPage />} />
+        <Route path='/posts'>
+          <Route index element={<PostsPage />} />
+          <Route path=":id" element={<PostDetailPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
