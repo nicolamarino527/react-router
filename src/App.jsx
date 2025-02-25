@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import './App.css';
 
 // Importiamo le pagine
@@ -16,8 +16,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/posts" element={<PostsPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/posts" element={<PostsPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .header {
@@ -31,6 +30,7 @@
 .bg {
   background-color: rgb(236, 236, 236);
   height: 100%;
+
 }
 
 .card {
@@ -40,6 +40,7 @@
   height: 550px;
   cursor: pointer;
   overflow: hidden;
+
 }
 
 .post-list {
@@ -67,4 +68,8 @@
   flex-direction: column;
   align-items: center;
   padding: 100px;
+}
+
+.active {
+  background-color: rgb(229, 229, 229);
 }
