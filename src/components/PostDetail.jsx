@@ -23,7 +23,18 @@ export default function PostDetail() {
 
     return (
         <>
-            <h1>{post.title}</h1>
+            <div className="card card-detail" key={post.id}>
+                <img
+                    src={post.image}
+                    className="card-img-top"
+                    alt="Card image"
+                />
+                <div className="card-body">
+                    <h5 className="card-title title-detail">{post.title}</h5>
+                    <p className="card-text">"{post.tags}"</p>
+                    <p className="card-text">{post.content}</p>
+                </div>
+            </div>
         </>
     )
 }
