@@ -7,8 +7,9 @@ import PostsPage from './pages/PostsPage';
 import ContactsPage from './pages/ContactsPage';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
-import PostList from './components/PostList';
 import PostDetailPage from './pages/PostDetailPage';
+import NewPostPage from './pages/NewPostPage';
+
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/posts'>
           <Route index element={<PostsPage />} />
           <Route path=":id" element={<PostDetailPage />} />
+          <Route path="newpost" element={<NewPostPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

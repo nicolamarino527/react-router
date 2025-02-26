@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import axios from 'axios';
 
 export default function PostList() {
@@ -88,6 +88,7 @@ export default function PostList() {
                     </Link>
                 ))}
             </div>
+
             <div className="form">
                 <h1>Aggiungi un nuovo post</h1>
                 {errorMessage && <p className="error">{errorMessage}</p>}
